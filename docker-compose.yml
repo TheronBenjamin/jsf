@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  database:
+    image: mariadb:10.8
+    volumes:
+      - data:/var/lib/mysql
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: crm
+      MARIADB_USER: crm
+      MARIADB_PASSWORD: crm
+    ports:
+      - "3307:3306"
+
+volumes:
+  data:

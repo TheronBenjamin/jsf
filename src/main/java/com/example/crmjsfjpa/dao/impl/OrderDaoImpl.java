@@ -60,4 +60,13 @@ public class OrderDaoImpl implements OrderDao {
 			throw new DaoException(e);
 		}
 	}
+
+	@Override
+	public void deleteOrder(Order order) throws DaoException {
+		try{
+			em.remove(order);
+		} catch (Exception e){
+			throw new DaoException(e);
+		}
+	}
 }

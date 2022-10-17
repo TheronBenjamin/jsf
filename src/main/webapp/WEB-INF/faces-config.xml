@@ -5,7 +5,7 @@
               version="2.3">
     <application>
         <resource-bundle>
-            <base-name>fr.wijin.crm.bean.messages</base-name>
+            <base-name>com.example.crmjsfjpa.messages</base-name>
             <var>msg</var>
         </resource-bundle>
     </application>

@@ -43,4 +43,13 @@ public class UserDaoImpl implements UserDao {
             throw new DaoException(e);
         }
     }
+
+    @Override
+    public void deleteUser(User user) throws DaoException {
+        try{
+            em.remove(user);
+        } catch (Exception e){
+            throw new DaoException(e);
+        }
+    }
 }
